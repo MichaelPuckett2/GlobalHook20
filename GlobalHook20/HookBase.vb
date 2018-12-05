@@ -7,6 +7,10 @@
 Public MustInherit Class HookBase
     Implements IDisposable
 
+    Public Const I_LOVE_GOD_FOREVER As String = "Thank you God for all the wisdom, love, mercy, and forgiveness you have given me.  " &
+                                                "Thank you for the talent to do what all I can do and I pray that I do it all to gloriy you.  " &
+                                                "Thank you so much for my family.  I love you and praise you and lift your name higher forever and ever. I love you God with all my heart."
+
     ''' <summary>
     ''' The value used to store the HookType.
     ''' </summary>
@@ -19,7 +23,6 @@ Public MustInherit Class HookBase
     ''' <param name="_idHook">The HookType to be installed.</param>
     ''' <remarks></remarks>
     Public Sub New(ByVal _idHook As HookType)
-        CheckKey()
         idHook = _idHook
     End Sub
 

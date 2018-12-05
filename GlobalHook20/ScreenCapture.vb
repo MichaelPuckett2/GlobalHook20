@@ -6,12 +6,6 @@ Imports System.Drawing.Imaging
 Namespace Screen
     Public Class ScreenCapture
 
-        Public Sub New()
-            CheckKey()
-        End Sub
-
-
-
         ''' <summary>
         ''' Creates an Image object containing a screen shot of the entire desktop
         ''' </summary>
@@ -189,10 +183,6 @@ Namespace Screen
 
             Public Declare Function GetForegroundWindow Lib "user32" () As IntPtr
 
-
         End Class
-
     End Class
-
-
 End Namespace
